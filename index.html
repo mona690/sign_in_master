@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles/all.min.css" />
+  <link rel="stylesheet" href="styles/bootstrap.min.css" />
+  <link rel="stylesheet" href="styles/index.css" />
+  <title>Login System</title>
+</head>
+<body>
+<nav class="d-none fixed-top">
+  <div class="navbar w-75 m-auto">
+    <div class="container-fluid">
+      <h1 class="navbar-brand fw-bolder">Smart Login</h1>
+      <button class="btn btn-outline-dark" type="button" id="logOutButton">
+        Log Out
+      </button>
+    </div>
+  </div>
+</nav>
+<header>
+  <div class="body d-flex align-items-center justify-content-center" id="baseScreen">
+    <div class="container login p-4" id="loginForm">
+      <form action="" id="formmLogIn">
+        <h2 class="my-3 text-center">LOGIN</h2>
+        <div class="position-relative boss">
+          <input
+            type="email"
+            placeholder="Type Your Email "
+            class="form-control"
+            id="loginUserEmail"  
+          />
+          <span class="line"></span>
+        </div>
+        <div class="position-relative boss">
+          <input
+            type="password"
+            placeholder="Type Your password"
+            class="form-control"
+            id="loginUserpass"
+          />
+          <span class="line"></span>
+        </div>
+        <div class="d-flex align-items-center justify-content-center">
+          <button
+            class="btn rounded-pill btun position-relative"
+            id="loginButton"
+            type="submit"
+          >
+            LOGIN
+          </button>
+        </div>
+      </form>
+      <p class="m-3 text-center fs-6">
+        don’t have an account? <span id="signUpConverter">Sign Up</span>
+      </p>
+      <p class="m-3 text-center fs-6" id="isExistMessage"></p>
+    </div>
+    <div class="container signup p-4 d-none" id="signUpForm">
+      <h2 class="my-3 text-center">Sign Up</h2>
+      <form action="" id="formmSignUp">
+        <div class="position-relative boss">
+          <input
+            type="text"
+            placeholder="Type Your Username "
+            id="SignUpUserName"
+            class="form-control"
+          />
+          <div class="alert alert-danger my-2 p-2 d-none">
+            must contain 2 to 10 char or digits <br />
+            example:mona
+          </div>
+          <span class="line"></span>
+        </div>
+        <div class="position-relative boss">
+          <input
+            type="email"
+            placeholder="Type Your Email "
+            id="SignUpUserEmail"
+            class="form-control"
+          />
+          <div class="alert alert-danger my-2 p-2 d-none">
+            example: mona@gmail.com
+          </div>
+          <span class="line"></span>
+        </div>
+        <div class="position-relative boss">
+          <input
+            type="password"
+            placeholder="Type Your password"
+            id="SignUpUserPass"
+            class="form-control"
+          />
+          <div class="alert alert-danger my-2 p-2 d-none">
+            must contain 5 to 10 chars or digits <br />example:141973h
+          </div>
+          <span class="line"></span>
+        </div>
+        <div class="d-flex align-items-center justify-content-center">
+          <button
+            class="btn rounded-pill btun position-relative"
+            id="signUpButton"
+            type="submit"
+          >
+            SIGNUP
+          </button>
+        </div>
+      </form>
+      <p class="m-3 text-center fs-6">
+        you have an account? <span id="signInConverter">Sign In</span>
+      </p>
+      <p class="m-3 text-center fs-6" id="message"></p>
+    </div>
+  </div>
+  
+  <div class="body d-flex align-items-center justify-content-center d-none" id="welcomeScreen">
+    <div
+      id="welcomeMassege"
+      class="welbox p-4 d-flex align-items-center justify-content-center"
+    ></div>
+  </div>
+</header>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

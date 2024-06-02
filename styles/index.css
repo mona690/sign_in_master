@@ -1,0 +1,162 @@
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+  scroll-padding-top: 37.6px;
+}
+
+::selection {
+  background-color: pink;
+  color: white;
+}
+nav {
+  background-color: #f4e2db13;
+  box-shadow: -5px 2px 54px -9px rgba(128, 128, 128, 0.15);
+}
+.body {
+  background-image: url(../images/bg-im.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+.login,
+.signup {
+  height: 95vh;
+  width: 30%;
+  margin: auto;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.719);
+  box-shadow: -5px 2px 54px -9px rgba(255, 255, 255, 0.719);
+  padding: 1rem 0.5rem;
+}
+.welbox {
+  height: 30vh;
+  width: 60%;
+  margin: auto;
+  border-radius: 20px;
+  background-color: #f4e2db13;
+  box-shadow: -5px 2px 54px -9px black;
+  padding: 1rem 1rem;
+  color: white;
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+.welbox span {
+  font-family: impact;
+}
+.welbox p {
+  font-family: SimpleThings;
+  margin: 0.5rem;
+}
+h1,
+h2 {
+  color: white !important;
+  font-family: SimpleThings;
+}
+h1 {
+  font-size: 2rem !important;
+}
+h2 {
+  font-size: 3rem;
+}
+input {
+  border-color: transparent;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+  margin: 1rem 0 0 0;
+  width: 100%;
+  background-color: transparent !important ;
+  border-bottom: 2px solid white !important;
+  cursor: pointer;
+}
+input:focus {
+  border: none;
+  border-color: transparent;
+}
+
+.line::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: pink;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+input:focus {
+  border-color: transparent;
+  border: 0px solid transparent;
+  outline: 0 !important;
+  border-color: transparent;
+}
+.boss {
+  margin: 2rem 0;
+}
+.boss:hover .line::after {
+  width: 100%;
+}
+ 
+.btun {
+  background-image: linear-gradient(to right, white, #78767400);
+  padding: 0.5rem 1rem;
+  width: 70%;
+  border: none;
+  transition: all 2s;
+  color: black;
+}
+.btun:hover {
+  background-image: linear-gradient(to left, white, #6d66627f);
+}
+p span {
+  color: white;
+  transition: all 0.4s;
+  font-weight: 900;
+}
+p span:hover {
+  text-decoration: underline;
+  color: #913706;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.form-control:focus {
+  border-color: pink;
+  border-bottom: 2px solid transparent !important;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem pink;
+
+}
+
+@media (max-width: 1029px) {
+  .login,
+  .signup {
+    width: 60%;
+  }
+}
+@media (max-width: 772px) {
+  .login,
+  .signup {
+    width: 65%;
+  }
+  .welbox {
+    width: 95%;
+  }
+}
+
+@font-face {
+  font-family: impact;
+  src: url(../fonts/impact.ttf);
+}
+@font-face {
+  font-family: SimpleThings;
+  src: url(../fonts/Batang\ Tebo.otf);
+}
