@@ -6,7 +6,7 @@
 
 body {
   scroll-behavior: smooth;
-  scroll-padding-top: 37.6px;
+  scroll-padding-top: 37px;
 }
 
 ::selection {
@@ -28,9 +28,9 @@ nav {
   height: 95vh;
   width: 30%;
   margin: auto;
-  border-radius: 20px;
+  border-radius: 30px;
   background-color: rgba(255, 255, 255, 0.719);
-  box-shadow: -5px 2px 54px -9px rgba(255, 255, 255, 0.719);
+  box-shadow: -5px 2px 52px -9px rgba(255, 255, 255, 0.719);
   padding: 1rem 0.5rem;
 }
 .welbox {
@@ -77,20 +77,7 @@ input:focus {
   border-color: transparent;
 }
 
-.line::after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: 0px;
-  left: 0;
-  width: 0%;
-  height: 2px;
-  background: pink;
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s;
-}
+ 
 
 input:focus {
   border-color: transparent;
@@ -123,16 +110,16 @@ p span {
 }
 p span:hover {
   text-decoration: underline;
-  color: #913706;
+  color: pink;
   font-weight: 500;
   cursor: pointer;
 }
 
 .form-control:focus {
+  border-bottom: 1px solid transparent !important;
   border-color: pink;
-  border-bottom: 2px solid transparent !important;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem pink;
+  box-shadow: 0 0 0 0.3rem pink;
 
 }
 
